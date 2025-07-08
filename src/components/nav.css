@@ -1,0 +1,273 @@
+
+.container{
+    background-color: #333;
+    Color:red;
+    gap: 35rem;
+    top: 0;
+    left: 0; 
+    position: fixed;
+    height: 1.85em;
+    width: 100%;
+    z-index: 999; 
+    padding:10px;
+    
+}
+
+.container-link{
+    /* display: flex; */
+    border-radius: 20px;
+    justify-content:center;
+    align-items: center;
+    float: right;
+    padding-right: 35px;
+    z-index: 999;
+}
+.link-child{
+    padding: 7px 15px; 
+    color: black; 
+    display: inline-block; 
+    
+    text-decoration: none;
+    margin-left: 10px;
+    color: white; 
+}
+.link-child:hover{
+    /* background-color: #747475;  */
+    background-color: #17161d;
+    border-radius: 5px; 
+    color: #bee1f1;
+    /* color: #2fff00; */
+    transition: background-color 0.3s, border-radius 0.3s; /* Smooth transition for hover effect */
+    align-items: center;
+    justify-content: center;
+}
+.active{
+  background-color: #17161d;
+  border-radius: 5px; 
+  color: #bee1f1; 
+}
+.social-links{
+  text-decoration: none;
+  width: 100%;
+}
+.social-links ul{
+    list-style: none;
+}
+
+.border-for-container {
+  position: relative; /* To position the pseudo-elements relative to the container */
+  padding: 20px;
+  /* Optional: Border for the unordered list */
+}
+
+.border-for-container::before, .border-for-container::after {
+  content: ''; /* Empty content for pseudo-elements */
+  position: absolute;
+  background-color: #333; /* Color for the perpendicular lines */
+}
+
+/* Top-left corner lines (horizontal and vertical) */
+.border-for-container::before {
+  width: 95px; /* Length of the horizontal line at the top-left */
+  height: 2px; /* Thickness of the line */
+  top: 0;
+  left: 0;
+}
+
+.border-for-container::after {
+  height: 60px; /* Length of the vertical line at the top-left */
+  width: 2px; /* Thickness of the line */
+  top: 0;
+  left: 0;
+}
+
+/* Bottom-right corner lines (horizontal and vertical) */
+.border-for-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  right: 0; /* Position at the right */
+}
+
+/* Horizontal line at the bottom-right corner */
+.border-for-container .bottom-right-horizontal {
+  position: absolute;
+  width: 95px;
+  height: 2px;
+  background-color: #333;
+  bottom: 0;
+  right: 0;
+  margin-right: 76%;
+}
+
+/* Vertical line at the bottom-right corner */
+.border-for-container .bottom-right-vertical {
+  margin-right: 76%;
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: #333;
+  bottom: 0;
+  right: 0;
+}
+
+.content{
+    margin-top: 80px;  
+}
+
+.form{
+  text-align: center;
+  padding: 30px;
+  border: 2px solid gray;
+  border-radius: 15px;
+  width: 25%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  height: 21em;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(249, 255, 255);
+  opacity: 1;
+  z-index: 999;
+  }
+.form-container{
+  padding-bottom: 100px;
+}
+.form > input, .form .message{
+  /* width: 80%;to contain the width of the form or its parent */
+  text-align: center;
+  border-radius: 15%;
+  font-size: .9rem;
+  }
+.message{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  textarea{
+    box-sizing: border-box; 
+    resize: none;
+  }
+  .submit-btn{
+    background-Color: white;
+    cursor: Pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+  } 
+  /* .submit-btn:hover{
+    background-color: #f0f0f0;
+  } */
+  @media(max-width:1024px){
+  .container{
+    height: 1.5em;
+    width: 100%;
+    z-index: 999;
+  }
+  .link-child{
+    font-size: 1rem;
+    padding: 7px 8px; 
+  }
+  .contact-container{
+    margin-bottom: 4rem;
+  }
+    .form{
+      width: 60%;
+      height: 16em;
+      /* margin: 280px; */
+      
+    }
+    .form > input, .form .message {
+      width: fit-content; /* prevents the input filed from out of the boundary*/
+      margin: 10 0px;
+    }
+    textarea{
+      height: 30%;
+    }
+    .border-for-container::before, .border-for-container::after, .border-for-container::before, .border-for-container::after, .border-for-container::after, .border-for-container .bottom-right-horizontal, .border-for-container .bottom-right-vertical{
+      display: none;
+    }
+
+  }
+@media(max-width:768px){
+  .link-child{
+    font-size: .9rem;
+    padding: 7px 8px; 
+}
+    /* .container{
+        flex-direction: column;
+        align-items: center;
+        background-color: #d11414;
+        Color:white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15rem;
+        padding: 0 1rem;
+    } */
+    .container{
+      height: 1.5em;
+      width: 100%;
+      z-index: 999;
+  }
+     body{
+      margin: 0;
+     }
+    .form{
+      /* min-width: 100%; */
+      max-height: 100%;
+      width: fit-content;
+      height: 16.6em;
+      /* margin: 5px;
+      padding: 5px; */
+      
+    }
+    .form > input, .form .message {
+      /* width: 100%; */
+      /* height: 100%; */
+      /*width: auto;  prevents the input filed from out of the boundary
+      width: 100% - 20%; */
+      margin: 10 0px;
+    }
+    textarea{
+      height: 30%;
+    }
+    .border-for-container::before, .border-for-container::after, .border-for-container::before, .border-for-container::after, .border-for-container::after, .border-for-container .bottom-right-horizontal, .border-for-container .bottom-right-vertical, .horizontal-line{
+      display: none;
+    }
+}
+/* @media(max-width:1024px){
+  .form{
+    text-align: center;
+       
+      
+      max-height: 100%;
+      margin: 0px;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      height:100vh;
+      margin: 5px;
+      padding: 5px;
+  }
+  .form > input, .form .message{
+    text-align: center;
+    width: 50vw;
+    
+  }
+} */
+
+/*
+        the bootom codes are comented before
+        .container{
+            display: flex;
+            margin-top: 20px;
+        }
+.container img{
+    width: 20vw;
+            the bootom code is comented before
+                height: auto; 
+    border-radius: 8px;
+
+}
+ */

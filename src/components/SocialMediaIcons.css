@@ -1,0 +1,331 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  background-color: #FCFBF4;
+  
+}
+.container-background{
+  position:absolute;
+  /* bottom: 30%; */
+  top: 0;
+  height: 66vh;
+  width: 100%;
+  background-image: url('../image/pic1.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  opacity: 0.09;
+  transition: background-color 0.3s ease-out;
+}
+.scrolled{
+  background-image: none;
+  height: 100vh;
+  /* background-color: #ff6347; */
+}
+.backgroundText{
+  position: fixed;
+  font-size: 10rem;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
+  color: rgba(0, 0, 0,0.09);
+  z-index: 1;
+  /* opacity: 0.09; */
+}
+
+#root{
+  /* background-color: #FCFBF4; */
+  min-height: 100%;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  border-radius: 50%;
+  z-index: 999;
+}
+.tocenter{
+  display: block;
+  position: relative;
+  height: 100px;
+  margin: auto;
+  margin-top: 65px;
+  width: 100px;
+  border-radius: 50%;
+  z-index: 99;
+}
+.profile{
+  right: 0;
+  top: 0;
+  margin-top: 65px;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  border-radius: 50%;
+  rotate: 4deg;
+  z-index: 999;
+}
+
+a {
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+    
+  }
+  /* a:visited {
+    color: #3D1E00;
+  } */
+  .footer a:hover{
+    transform:translateX(3px) scale(1.3);
+  }
+  .container-link a:hover{
+    transform: scale(1.05);
+  }
+  .twitter:hover, .github:hover {
+    color: #007bff; 
+  }
+  .instagram:hover{
+    background: linear-gradient(45deg, rgb(249, 206, 52), rgb(238, 42, 123), rgb(98, 40, 215));
+  }
+  .instagram2{
+    border-radius: 6px;
+  } 
+  .youtube:hover{
+    color: #ff0000;
+  }
+  .facebook, .linkedin, .instagram, .github, .tiktok, .twitter, .youtube{
+    /* color: #469daa; */
+    color: white;
+    transition: background 0.8s ease, color 0.9s ease-in-out;
+  }
+  .facebook:hover {
+    color: #0808a5cd;
+    background-color: inherit;
+  }
+  .linkedin:hover {
+    background-color: 	#0077B5; 
+  }
+  .tiktok:hover {
+    color: #0c0c0c; /* TikTok's primary color for hover effect */
+  }
+  .footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #999797;
+    gap: .55rem;
+    bottom: 0;
+    left: 0; 
+    position: fixed;
+    z-index: 999;
+    height: 50px;
+    width: 100%;
+    padding: 0px 15px;
+  }
+  .content{
+    padding-left: 140px;
+    padding-right: 140px;
+    margin-bottom: 90px;
+    z-index: 2;
+  }
+  .content > h1{
+      background: linear-gradient(45deg, rgb(0, 255, 221), rgba(160, 29, 29, 0.418), rgb(195, 0, 255));
+      background-clip: text;
+      color: transparent;
+  }
+  .container .one{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .span-for-resume {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.horizontal-line {
+  width: 2%; /* Start with no width */
+   /* Height of the line */
+   color: blue;
+  transition: width 0.3s ease; /* Smooth transition for the width */
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.span-for-resume:hover .horizontal-line {
+  width: 17%; /* Full width when hovered */
+  margin-left: 6px;
+}
+.projects-overall-container{
+  background-color: #333;
+    /* opacity: 1; */
+    position: relative;
+    z-index: 999;
+    margin-left: -150px;
+    /* margin-right: 0px; */
+    width: 100vw;
+    padding: 10px 10px 13px 10px;
+    margin-top: 20px;
+}
+  
+  .project-two, .project-one{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    opacity: 1;
+    z-index: 2;
+    /* justify-content: flex-end; */
+  }
+  .project-one > div{
+    /*box-shadow: -1px 8px 15px rgba(50, 50, 50, 0.3);
+     rgba(179, 178, 178, 0.39); */
+    box-shadow: -1px 8px .5px rgba(61, 30, 0, 0.4);
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    background-color: #F5F5DC;
+    color: #3D1E00;
+    flex: 1;
+    margin: 7px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .project-two > div {
+    border-radius: 8px;
+    flex: 1;
+    color: #3D1E00;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 100px;
+  }
+  .project-two > div:first-child {
+    box-shadow: -1px 8px .5px rgba(61, 30, 0, 0.4);
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
+    background-color: #F5F5DC;
+  }
+  .project-two > div:first-child:hover , .project-one > div:hover{
+    background-color: #D3D3D3;
+    color: blue;
+    transform: scale(1.02) perspective(800px) rotateY(10deg) translate3d(2px, 2px, 2px);
+  }
+  
+  .downloadResume{
+    color: #2b45d6d7;
+  }
+  .downloadResume:hover{
+    transform: scale(1.4);
+  }
+
+  @media(max-width:768px){
+    body{
+      font-size: 1rem;
+    }
+    .content{
+      padding-left: 4vw;
+      padding-right: 4vw;
+      margin-bottom: 10vh;
+      padding-bottom: 3rem;
+    }
+    .content > h1{
+      font-size: 1.66rem;
+    }
+    .logo{
+      width: (30%-10%);
+      height: 100px;
+      /* margin-top: 3.2rem; */
+      display: block;
+      position: absolute;
+      margin-left: 5px;
+      z-index: 99;
+    }
+    .tocenter{
+      width: 30%;
+      display: block;
+      margin: -30 auto auto auto;
+      
+      width: 100px;
+      
+    }
+    .profile{
+      width: (30%-10%);
+      display: block;
+      margin-right: 5px;
+      position: absolute;
+      z-index: 99;
+    }
+    .footer{ 
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      gap: .55rem;
+      height: 50px;
+      width: 100vw;
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      margin: 0;
+    }
+    .projects-overall-container{
+      background-color: #333;
+        position: relative;
+        z-index: 99;
+        margin-left: -14vw;
+        width: 110vw;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20vh;
+    }
+    .project-two, .project-one{
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-left: 22vw;
+      margin-right: 0px;
+    }
+    
+    .container-background{
+      background-image: none;
+    }
+  }
+
+  @media(max-width:1024px) {
+    .project-one, .project-two{
+      flex-direction: column;
+      gap: 10px;
+    }
+    .logo, .profile{
+      position: absolute;
+      z-index: 99;
+    }
+    .content{
+      padding-left: 4vw;
+      padding-right: 4vw;
+      margin-bottom: 10vh;
+      padding-bottom: 3rem;
+    }
+    .projects-overall-container{
+      background-color: #333;
+        position: relative;
+        z-index: 99;
+        margin-left: -14vw;
+        width: 110vw;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .project-two, .project-one{
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-left: 22vw;
+      margin-right: 15vw;
+    }
+    
+    .container-background{
+      background-image: none;
+    }
+  }
